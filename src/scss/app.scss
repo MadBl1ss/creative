@@ -30,9 +30,9 @@
 }
 
 .main__container {
-  display: flex;
-  flex-flow: row wrap;
   padding: 0 15%;
-  row-gap: 20px;
-  background-color: $mainBG;
+  background-color: #f6f9ff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 20px;
 }
