@@ -28,11 +28,88 @@
     transform: scale(1.05);
   }
 }
-
-.main__container {
+.main {
   padding: 0 15%;
   background-color: #f6f9ff;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px 20px;
+}
+.cards {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+    padding-bottom: 80px;
+  }
+}
+.filters__container {
+  display: flex;
+  padding: 40px 0 56px 0;
+  gap: 20px;
+  .date__first {
+    position: relative;
+  }
+  .date__second {
+    position: relative;
+  }
+  &-author {
+    position: relative;
+    display: flex;
+    align-items: center;
+    svg {
+      position: absolute;
+      left: 16px;
+    }
+    span {
+      position: absolute;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #888888;
+      left: 50px;
+    }
+  }
+  &-author select {
+    background: #ffffff;
+    border-radius: 10px;
+    height: 50px;
+    width: 335px;
+  }
+  &-date {
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #888888;
+    input {
+      height: 50px;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      color: white;
+    }
+    .first {
+      border-radius: 10px 0 0 10px;
+      &::before {
+        content: "От";
+        position: absolute;
+        left: 16px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #888888;
+        border-radius: 10px 0 0 10px;
+      }
+    }
+    .second {
+      border-radius: 0 10px 10px 0;
+      &::before {
+        content: "—  До";
+        position: absolute;
+        left: 16px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #888888;
+      }
+    }
+  }
 }

@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <div className="header">
-      <a className="header__logo" href="#">
+      <a className="header__logo" href="/">
         <svg
           width="121"
           height="30"
@@ -42,8 +42,8 @@ const Header = () => {
         </svg>
       </a>
       <div className="header__links">
-        <a href="#">8 800 000 00 00</a>
-        <a href="#">sales@logo.ru</a>
+        <a href="/">8 800 000 00 00</a>
+        <a href="/">sales@logo.ru</a>
       </div>
     </div>
   );
