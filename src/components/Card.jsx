@@ -45,9 +45,9 @@ const Card = ({ author, title, article, date }) => {
       break;
   }
   if (article.length >= 190) {
-    article = article.slice(0, 190) + "...";
+    article = article.slice(0, 170) + "...";
   }
-  console.log(article.length);
+
   return (
     <div className="card__wrapper">
       <span className="card__wrapper-date">
