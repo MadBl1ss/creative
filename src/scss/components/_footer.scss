@@ -20,6 +20,10 @@
       font-size: 16px;
       line-height: 20px;
       color: #ffffff;
+      transition: all 0.3s ease-in;
+    }
+    li:hover {
+      color: $accent;
     }
     display: inline-flex;
     gap: 2rem;

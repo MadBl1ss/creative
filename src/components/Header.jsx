@@ -42,8 +42,8 @@ const Header = () => {
         </svg>
       </a>
       <div className="header__links">
-        <a href="/">8 800 000 00 00</a>
-        <a href="/">sales@logo.ru</a>
+        <a href="tel:88000000">8 800 000 00 00</a>
+        <a href="mailto:sales@logo.ru">sales@logo.ru</a>
       </div>
     </div>
   );

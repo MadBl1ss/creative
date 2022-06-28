@@ -45,10 +45,18 @@ const Footer = () => {
           </div>
           <div className="footer__upperContainer-links">
             <ul>
-              <li>Готовые решения</li>
-              <li>О нас</li>
-              <li>Блог</li>
-              <li>Контакты</li>
+              <a href="/">
+                <li>Готовые решения</li>
+              </a>
+              <a href="/">
+                <li>О нас</li>
+              </a>
+              <a href="/">
+                <li>Блог</li>
+              </a>
+              <a href="/">
+                <li>Контакты</li>
+              </a>
             </ul>
           </div>
         </div>

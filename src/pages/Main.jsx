@@ -45,6 +45,7 @@ const Main = () => {
         <div className="filters__container">
           <div className="filters__container-author">
             <svg
+              className={author !== "" ? "hide" : ""}
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -66,7 +67,7 @@ const Main = () => {
                 strokeLinejoin="round"
               />
             </svg>
-            <span className="active">Выбор автора</span>
+            <span className={author !== "" ? "hide" : ""}>Выбор автора</span>
             <select value={author} onChange={(e) => setAuthor(e.target.value)}>
               <option></option>
               {authors.map((n, i) => (

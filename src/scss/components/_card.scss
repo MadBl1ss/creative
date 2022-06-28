@@ -6,7 +6,7 @@
   padding: 24px;
   background-color: #fff;
   border-radius: 20px;
-  min-height: 252px;
+  min-height: 272px;
   transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
   &-date {
     color: #10b2d0;
@@ -24,10 +24,11 @@
   }
   &-article {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     color: #888888;
     margin-bottom: 24px;
+    overflow: hidden;
   }
   &-author {
     position: absolute;
