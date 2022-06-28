@@ -48,6 +48,9 @@ const Card = ({ author, title, article, date }) => {
     article = article.slice(0, 170) + "...";
   }
 
+  // const alo = new Date(date);
+  // console.log(alo.toLocaleString("default", { month: "long" }));
+
   return (
     <div className="card__wrapper">
       <span className="card__wrapper-date">
