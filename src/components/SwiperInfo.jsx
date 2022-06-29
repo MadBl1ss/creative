@@ -33,7 +33,9 @@ const SwiperInfo = () => {
             </p>
             <button className="btn">Подробнее</button>
           </div>
+          {/* <div className="image__container"> */}
           <img src={manbg} alt="" />
+          {/* </div> */}
         </SwiperSlide>
         <SwiperSlide>
           <div className="articles__container">

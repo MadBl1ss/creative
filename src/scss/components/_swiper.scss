@@ -3,22 +3,18 @@
 .swiper {
   width: 100%;
   height: 100%;
-  &-wrapper {
-  }
 }
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: linear-gradient(100.68deg, #5991ff 13.6%, #0050ef 94.69%);
   min-height: 546px;
-  position: relative;
+  padding: 0 0 0 15%;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  padding: 0 15%;
 }
 .swiper-pagination {
   text-align: left;
@@ -29,13 +25,6 @@
   left: 15%;
   width: 100%;
 }
-.swiper-slide img {
-  position: absolute;
-  right: 0;
-  height: 100%;
-  object-fit: cover;
-}
-
 .swiper-pagination-bullet {
   width: 29px;
   height: 3px;
@@ -74,5 +63,16 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 32px;
+  }
+}
+.swiper-slide {
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    float: right;
+    height: auto;
+    max-width: 621px;
+    object-fit: contain;
   }
 }
